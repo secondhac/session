@@ -13,7 +13,7 @@ spec:
   ports:
     - name: http
       port: 80
-      nodePort: 30080
+      nodePort: 30402
 
   type: LoadBalancer
 ---
@@ -32,7 +32,7 @@ spec:
   ports:
     - name: http
       port: 8161
-      nodePort: 30010
+      nodePort: 30400
 
     - name: endpoint
       port: 61616
@@ -74,6 +74,6 @@ spec:
   ports:
     - name: http
       port: 8080
-      nodePort: 30020
+      nodePort: 30401
 
   type: NodePort
