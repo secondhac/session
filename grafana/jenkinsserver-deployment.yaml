@@ -6,8 +6,8 @@ metadata:
     kompose.version: 1.19.0 (f63a961c)
   creationTimestamp: null
   labels:
-    io.kompose.service: web
-  name: web
+    io.kompose.service: jenkins
+  name: jenkins
 spec:
   replicas: 1
   strategy: {}
@@ -18,13 +18,13 @@ spec:
         kompose.version: 1.19.0 (f63a961c)
       creationTimestamp: null
       labels:
-        io.kompose.service: web
+        io.kompose.service: jenkins
     spec:
       containers:
-      - image: web
-        name: web
+      - image: jenkins/jenkins
+        name: jenkins
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
         resources: {}
       restartPolicy: Always
 status: {}
